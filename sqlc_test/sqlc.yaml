@@ -1,0 +1,10 @@
+version: "2"
+sql:
+  - schema: [ "space/schema.sql"]
+    queries: "space/query.sql"
+    engine: "postgresql"
+    gen:
+      go:
+        sql_package: "wpgx"
+        package: "space"
+        out: "space"
